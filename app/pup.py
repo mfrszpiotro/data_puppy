@@ -79,3 +79,12 @@ class DataPuppy:
                     budgets, key=lambda budget: budget[1]
                 )  # sort by budget in (title, budget)
                 print(f"A minimum budget of a movie: {lowest_budget}")
+
+            # Pandas version is shorter and more accurate:
+            # import pandas as pd
+
+            # df = pd.read_csv(selected_path)
+            # min_budget_test = df[df["budget"] == df["budget"].min()][
+            #     ["title", "budget"]
+            # ]
+            # print(f"(test) A minimum budget of a movie: {min_budget_test}")
